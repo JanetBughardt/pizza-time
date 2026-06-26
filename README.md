@@ -29,7 +29,15 @@ Pizza Time ist eine interaktive Restaurant-Webanwendung. Nutzer können Gerichte
 
 ## 📷 Screenshots
 
-*(werden ergänzt)*
+### Desktop
+
+![Homepage](screenshots/homepage.png)
+
+### Mobile
+
+![Mobile](screenshots/Homepage-mobile.png)
+
+![mobile-warenkorb](screenshots/mobile-warenkorb.png)
 
 ## 🚀 Was ich bei diesem Projekt gelernt habe
 
