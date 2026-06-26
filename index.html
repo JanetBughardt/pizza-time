@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Favicon/favicon.ico" type="image/x-icon" />
+    <title>Bestellapp</title>
+    <script src="dp.js"></script>
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsiv.css">
+</head>
+
+<body onload="init()">
+
+    <header>
+        <div class="logo"><img src="./img/Logo/Logo.png" alt="" srcset=""></div>
+    </header>
+
+   <main>
+        <section class="menu">
+
+            <div class="food_image"><img src="./img/Bilder/Pizza.png" alt="" srcset=""></div>
+            <div class="overlap-image">
+                <img src="./img/Logo/44933.jpg" alt="Rundes Bild">
+            </div>
+
+            <h1>Pizza Time</h1>
+            <span class="bewertung">Bewertung (4,2 von 5 )</span>  
+
+            <div class="food_categorys">
+               
+                <div class="scrolls">
+                    <p><b><a href="#mainScroll">Hauptgerichte</a></b></p>
+                </div>
+                
+                <div class="scrolls">
+                    <p><b><a href="#sideScroll">Beilagen</a></b></p>
+                </div>
+              
+                <div class="scrolls">
+                    <p><b><a href="#dessertScroll">Desserts</a></b></p>
+                </div>
+            </div>
+
+            <div class="main_dishes" id="mainScroll">
+
+                <div class="food_image2">
+                    <img src="./img/Bilder/Pizzamain.jpg" alt="" srcset="">
+                </div>
+                <div class="dish_h">
+                    <h2>Hauptgerichte</h2>
+                </div>
+                <div id="mainDish">
+                </div>
+
+                <div class="side_dishes" id="sideScroll">
+
+                    <div class="food_image2">
+                        <img src="./img/Bilder/pommes.jpg" alt="" srcset="">
+                    </div>
+
+                    <div class="dish_h">
+                        <h2>Beilagen</h2>
+                    </div>
+                    <div id="sides">
+                    </div>
+                </div>
+
+                <div class="side_dishes" id="dessertScroll">
+                    <div class="food_image3">
+                        <img src="./img/Bilder/dessert.jpg" alt="" srcset="">
+                    </div>
+                    <div class="dish_h">
+                        <h2>Desserts</h2>
+                    </div>
+                    <div id="desserts">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shopping_card" id="cart">
+            <div class="card_open" id="cardIN">
+                <h2>Dein Warenkorb</h2>
+                <p>Hier sind deine ausgewählten Produkte.</p>
+            </div>
+
+            <div id="overlay" class="overlay">
+                Bestellung abgeschickt!
+            </div>
+            
+                <div class="card_items" id="cardInsert">
+                </div>
+
+                <div class="price_calc" id="priceCalc">
+                    <div class="summary-item">
+                        <span class="left">Zwischensumme</span>
+                        <span class="right">99,90€</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="left">Lieferkosten</span>
+                        <span class="right">5,00€</span>
+                    </div>
+               
+                    <div class="summary-item total">
+                        <strong class="left">Gesamt</strong>
+                        <strong id="totalSum" class="right">104,90€</strong>
+                    </div>  
+                </div>
+             <div>
+
+                    <button class="order-button" onclick="order()">BESTELLEN</button></div>  
+                </div>
+        </section>
+
+<button class="fixed-button" onclick= "toggleCardVisibility()" > <img src="./img/Bilder/Warenkorb.jpg" alt="icon" class="button-icon">
+    <span id="CardCounter" class="card-counter">0</span>
+</button>
+    
+</main>
+
+<footer>
+        <div class="logo"><img src="./img/Logo/Logo.png" alt="" srcset=""></div>
+        
+    </footer>
+   
+</body>
+
+</html>
